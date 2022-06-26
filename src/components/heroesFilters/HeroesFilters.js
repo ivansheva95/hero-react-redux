@@ -8,7 +8,7 @@
 
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import classNames from "classnames";
+// import classNames from "classnames";
 
 import { useHttp } from "../../hooks/http.hook";
 import {filtersFetching, filtersFetched, filtersFetchingError, activeFilterChanged } from "../../actions";
@@ -38,9 +38,9 @@ const HeroesFilters = () => {
                 ? `btn ${className} active`
                 :  `btn ${className}`
 
-            const btnClass = classNames('btn', className, {
-                'active': name === activeFilter
-            })
+            // const btnClass = classNames('btn', className, {
+            //     'active': name === activeFilter
+            // })
 
             return <button 
                         key={name}
